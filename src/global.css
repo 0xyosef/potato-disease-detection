@@ -1,0 +1,65 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: 140 82% 98%;
+      --foreground: 146 83% 7%;
+      --card: 140 82% 98%;
+      --card-foreground: 146 83% 7%;
+      --popover: 140 82% 98%;
+      --popover-foreground: 146 83% 7%;
+      --primary: 148 82% 54%;
+      --primary-foreground: 146 83% 7%;
+      --secondary: 191 83% 73%;
+      --secondary-foreground: 146 83% 7%;
+      --muted: 140 82% 20%;
+      --muted-foreground: 146 83% 70%;
+      --accent: 206 82% 60%;
+      --accent-foreground: 146 83% 7%;
+      --destructive: 0 85% 60%;
+      --destructive-foreground: 146 83% 7%;
+      --border: 140 82% 20%;
+      --input: 140 82% 20%;
+      --ring: 206 82% 40%;
+      --radius: 0.5rem;
+    }
+   
+    .dark {
+      --background: 143 80% 2%;
+      --foreground: 146 83% 93%;
+      --card: 143 80% 2%;
+      --card-foreground: 146 83% 93%;
+      --popover: 143 80% 2%;
+      --popover-foreground: 146 83% 93%;
+      --primary: 148 82% 46%;
+      --primary-foreground: 143 80% 2%;
+      --secondary: 191 83% 27%;
+      --secondary-foreground: 146 83% 93%;
+      --muted: 143 80% 80%;
+      --muted-foreground: 146 83% 93%;
+      --accent: 206 82% 40%;
+      --accent-foreground: 146 83% 93%;
+      --destructive: 0 62% 30%;
+      --destructive-foreground: 147 84% 10%;
+      --border: 143 80% 60%;
+      --input: 143 80% 80%;
+      --ring: 206 82% 60%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground scroll-smooth;
+    }   
+  }
+
+  @layer components {
+    .btn {
+      @apply px-4 py-2 rounded-md;
+    }
+  }
